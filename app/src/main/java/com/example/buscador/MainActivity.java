@@ -1,5 +1,7 @@
 package com.example.buscador;
 
+import static android.icu.text.ListFormatter.Type.OR;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     public void Seleccionar(){
         String op;
         op = Ingre_Datos.getText().toString();
-        if(op.equals("Teléfonos")){
+        if(op.equals("Teléfonos") || op.equals("teléfonos")){
             Datos = new ArrayList<>();
             Datos.add(new ProductosPlanilla(R.drawable.galaxya23,
                     "Samsung Galaxy S20.",
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     "Pantalla: 6,7 pulgadas panel LTPO Super Retina XDR OLED con tasa de refresco de 120 Hz.\n Sistema Operativo: IOS16.\n Procesador: Apple A16 Blonic.\n Memoria interna: 256GB/512GB/1TB.\n Batería: 4.323 mAh.")
             );
 
-        } else if (op.equals("Herramientas")) {
+        } else if (op.equals("Herramientas") || op.equals("herramientas")) {
             Datos = new ArrayList<>();
             Datos.add(new ProductosPlanilla(R.drawable.herra,
                     "Portaforio De Herramientas",
@@ -81,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     " Validación: Recibo Electrónico.",
                     "Arma cables Ethernet con gran calidad.\n Incorpora navajas de corte.\n Con resorte que mantiene la apertura.\n Para cables redondos y planos. Tienes seguro de apertura. \n Mango antiderrapante.")
             );
-        } else if (op.equals("Muebles")) {
+        } else if (op.equals("Muebles") || op.equals("muebles")) {
             Datos = new ArrayList<>();
             Datos.add(new ProductosPlanilla(R.drawable.meb,
                     "Mueble De Hogar",
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                             "Largo: 70 cms\n" +
                             "Ancho: 110 cms. Sillas: \n Alto: 84 cms. \n Largo: 43 cms.")
             );
-        }else if(op.equals("Relojes")){
+        }else if(op.equals("Relojes") || op.equals("relojes")){
             Datos = new ArrayList<>();
             Datos.add(new ProductosPlanilla(R.drawable.reloj,
                     "SMARTWATCH HUAWEI GT",
@@ -115,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     " Validación: Recibo Electrónico.",
                     "Cristal Mineral Material de la caja.\n Baño de iones Correa de cuero \n Funciones clásicas de reloj Analógica: 3 agujas (hora, minuto, segundo) \n Precisión: ±20 segundos por mes. \n Duración aprox. de la pila: 3 años en el modelo SR626SW.")
             );
-        } else if (op.equals("Laptops")) {
+        } else if (op.equals("Laptops") || op.equals("laptop")) {
             Datos = new ArrayList<>();
             Datos.add(new ProductosPlanilla(R.drawable.pc,
                     "Dell Latitud 3420 i7-1165",
