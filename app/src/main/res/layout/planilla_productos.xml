@@ -11,15 +11,15 @@
     android:layout_marginTop="10dp">
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
         android:layout_height="420dp"
+        android:orientation="horizontal"
         android:padding="10dp">
         <ImageView
             android:id="@+id/Imag_P"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_background"/>
+            android:src="@drawable/ic_launcher_foreground"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="410dp"
@@ -27,7 +27,7 @@
             android:orientation="vertical">
             <TextView
                 android:id="@+id/Nom_P"
-                android:layout_width="match_parent"
+                android:layout_width="224dp"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:hint="Nombre P"
@@ -36,7 +36,7 @@
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/Precio_P"
-                android:layout_width="match_parent"
+                android:layout_width="224dp"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:hint="Precio P"
@@ -64,7 +64,7 @@
             <TextView
                 android:id="@+id/Descrip_P"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="210dp"
                 android:padding="5dp"
                 android:hint="Descripción Del Producto"
                 android:textSize="14dp"
