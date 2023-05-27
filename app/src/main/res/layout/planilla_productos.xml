@@ -64,7 +64,7 @@
             <TextView
                 android:id="@+id/Descrip_P"
                 android:layout_width="match_parent"
-                android:layout_height="190dp"
+                android:layout_height="250dp"
                 android:padding="5dp"
                 android:hint="Descripción Del Producto"
                 android:textSize="14dp"
