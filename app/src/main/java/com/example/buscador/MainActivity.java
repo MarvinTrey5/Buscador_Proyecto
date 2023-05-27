@@ -6,10 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -133,6 +135,8 @@ public class MainActivity extends AppCompatActivity {
                     " Validación: Recibo Electrónico.",
                     "Pantalla:HD (1366 x 768) de 15,6\" (39,6 cm).\n Memoria RAM: 4 GB de RAM DDR4-2400 MHz (1 x 4 GB).\n Almacenamiento: Disco duro SATA de 1 TB y 5400 RPM.\n Sistema Operativo: Windows 11 Home.")
             );
+        }else {
+            Toast.makeText(this, "Producto no enontrado", Toast.LENGTH_SHORT).show();
         }
         Adaptador_Productos nuevo = new Adaptador_Productos(Datos, this);
         Mostrar.setHasFixedSize(true);
